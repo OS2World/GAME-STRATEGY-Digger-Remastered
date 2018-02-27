@@ -1,0 +1,44 @@
+#
+# Open Watcom makefile to create OS/2 (eComStation) executable file.
+#
+# Andrey Vasilkin, 2014
+# digi@os2.snc.ru
+#
+
+CFLAGS = -i=$(%WATCOM)\H\OS2;$(%WATCOM)\H -bt=os2 -q -bw -d0
+
+# Uncomment next line debug OS/2 related code
+# CFLAGS += -dDEBUG_FILE="digger.dbg"
+
+LIBS = mmpm2
+
+OBJS = main.obj digger.obj monster.obj bags.obj sound.obj newsnd.obj
+OBJS += record.obj drawing.obj scores.obj input.obj sprite.obj
+OBJS += cgagrafx.obj vgagrafx.obj alpha.obj title.obj ini.obj
+OBJS += newsnd2.obj os2_sys.obj
+
+digger.exe: $(OBJS) dig_os2.res
+  wlink SYS os2v2_pm libr mmpm2.lib op q file {$(OBJS:.obj=)} name $*
+  @rc -n dig_os2.res $@ >nul
+
+.c.obj:
+  wcc386 $(CFLAGS) $<
+
+dig_os2.res: dig_os2.rc ctitle.bmp vtitle.bmp os2_sys.h
+  @rc -r -n dig_os2.rc
+
+dig_os2.rc: os2_sys.h
+  @%create $@
+  @%append $@ $#include "os2_sys.h"
+  @%append $@ ICON    ID_APP_WINDOW       dig_os2.ico
+  @%append $@ BITMAP  IDB_TITLEBITMAP     Vtitle.bmp
+  @%append $@ BITMAP  IDB_CGATITLEBITMAP  Ctitle.bmp
+
+
+clean: .SYMBOLIC
+  @if exist *.obj del *.obj
+  @if exist dig_os2.res del dig_os2.res
+  @if exist dig_os2.rc del dig_os2.rc
+  @if exist digger.map del digger.map
+  @if exist digger.exe del digger.exe
+  @if exist digger.dbg del digger.dbg

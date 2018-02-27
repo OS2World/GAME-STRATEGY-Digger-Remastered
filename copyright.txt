@@ -1,0 +1,25 @@
+Windmill Software holds the copyright to the original Digger source code and
+binaries, and have exclusive rights to sell, license and produce the game in
+its original form.
+
+Rob Sleath has the right to use the Digger source code for development of
+other projects. Digger Remastered is such a project. It was produced without
+reference to the original Digger source by Windmill software, and without help
+from the original developers of Digger in any capacity other than historical
+advice. With the permission of Rob Sleath, Digger Remastered is Copyright (c)
+Andrew Jenner 1998-2004.
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
+

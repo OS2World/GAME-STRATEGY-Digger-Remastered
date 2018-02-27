@@ -1,0 +1,46 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WinDig - Win32 Combined Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x1009 /fo".\CombinedRelease/windig.res" /d "NDEBUG" "E:\windig\windig.rc"" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP41B3.TMP" with contents
+[
+libc.lib ole32.lib oleaut32.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib advapi32.lib shell32.lib winmm.lib comctl32.lib /nologo /subsystem:windows /pdb:none /machine:I386 /nodefaultlib /out:"WinDig.exe" 
+.\CombinedRelease\alpha.obj
+.\CombinedRelease\Bags.obj
+.\CombinedRelease\cgagrafx.obj
+.\CombinedRelease\Digger.obj
+.\CombinedRelease\Drawing.obj
+.\CombinedRelease\Ini.obj
+.\CombinedRelease\Input.obj
+.\CombinedRelease\Main.obj
+.\CombinedRelease\Monster.obj
+.\CombinedRelease\Newsnd.obj
+.\CombinedRelease\newsnd2.obj
+.\CombinedRelease\Record.obj
+.\CombinedRelease\Scores.obj
+.\CombinedRelease\Sound.obj
+.\CombinedRelease\Sprite.obj
+.\CombinedRelease\vgagrafx.obj
+.\CombinedRelease\win_cfg.obj
+.\CombinedRelease\win_snd.obj
+.\CombinedRelease\win_sys.obj
+.\CombinedRelease\win_vid.obj
+.\CombinedRelease\windig.res
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP41B3.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+WinDig.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

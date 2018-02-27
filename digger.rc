@@ -1,0 +1,5 @@
+#include "os2_sys.h"
+
+ICON    ID_APP_WINDOW		dig_os2.ico
+BITMAP  IDB_TITLEBITMAP		Vtitle.bmp
+BITMAP  IDB_CGATITLEBITMAP	Ctitle.bmp
